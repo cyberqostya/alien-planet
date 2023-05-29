@@ -1,4 +1,5 @@
 $placeimagewidth: 16px;
+$placeimagegap: 8px;
 
 .player {
   color: #fff;
@@ -20,7 +21,7 @@ $placeimagewidth: 16px;
 .player__places {
   display: grid;
   grid-template-columns: repeat(10, $placeimagewidth);
-  column-gap: 5px;
+  column-gap: $placeimagegap;
 }
 
 .player__place-image {
@@ -44,17 +45,17 @@ $placeimagewidth: 16px;
 
   &._has {
     opacity: 1;
+    &._used {
+      opacity: .3;
+    }
   }
 
-  &._used {
-    opacity: .2;
-  }
 }
 
 .player__invisible-part {
   display: flex;
   flex-direction: column;
-  row-gap: 5px;
+  row-gap: $placeimagegap;
   box-sizing: content-box;
 
   transition: all .4s;
@@ -66,7 +67,7 @@ $placeimagewidth: 16px;
 .player__checkboxes {
   display: flex;
   align-items: center;
-  column-gap: 5px;
+  column-gap: $placeimagegap;
 }
 
 .player__checkboxes-title {
