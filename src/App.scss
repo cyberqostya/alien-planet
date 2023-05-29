@@ -1,0 +1,43 @@
+@import 'fonts/fonts.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+body {
+  background: center/cover url(~images/back.jpg) no-repeat;
+  background-blend-mode: color-burn;
+  background-color: rgba(44, 9, 198, 0.598);
+  font-family: Troika;
+  font-size: 20px;
+  line-height: 1;
+}
+
+#root {
+  padding: 10px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+}
+
+input {
+  background: none;
+  outline: none;
+  appearance: none;
+  border: none;
+  padding: 0;
+  width: 110px;
+}
